@@ -1,5 +1,22 @@
 [
     {
-        "body": "testBody"
+        "body": "Javascript is a great language!",
+        "user_id": "1",
+        "post_id": "1"
+    },
+    {
+        "body": "SQL is a great database!",
+        "user_id": "2",
+        "post_id": "2"
+    },
+    {
+        "body": "React is a great way to organize your interfaces!",
+        "user_id": "3",
+        "post_id": "3"
+    },
+    {
+        "body": "node is a great way to accomplish things!",
+        "user_id": "4",
+        "post_id": "4"
     }
 ]

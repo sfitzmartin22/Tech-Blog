@@ -14,14 +14,18 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  for (const blog of blogData) {
-    await Blog.create({
-      ...blog,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+  const blogs = await Blog.bulkCreate(blogData, {
+    individualHooks: true,
+    returning: true,
+  });
+
+  const comments = await User.bulkCreate(commentData, {
+    individualHooks: true,
+    returning: true,
+  });
 
   process.exit(0);
+
 };
 
 seedDatabase();

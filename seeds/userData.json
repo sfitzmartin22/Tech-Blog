@@ -1,7 +1,22 @@
 [
     {
-        "username": "testUsername",
-        "password": "testPassword",
-        "email": "testEmail@gmail.com"
+        "username": "sfitzmartin",
+        "password": "22seanfitz22",
+        "email": "sfitzmartin22@gmail.com"
+    },
+    {
+        "username": "dfitzmartin",
+        "password": "22seanfitz22",
+        "email": "dfitzmartin22@gmail.com"
+    },
+    {
+        "username": "tfitzmartin",
+        "password": "22seanfitz22",
+        "email": "tfitzmartin22@gmail.com"
+    },
+    {
+        "username": "mfitzmartin",
+        "password": "22seanfitz22",
+        "email": "mfitzmartin22@gmail.com"
     }
 ]

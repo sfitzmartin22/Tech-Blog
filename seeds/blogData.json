@@ -1,6 +1,22 @@
 [
     {
-        "title": "testBlogTitle",
-        "body": "testBlogBody"
+        "title": "What is Javascript?",
+        "body": "I was wondering what Javascript is.",
+        "user_id": 2
+    },
+    {
+        "title": "What is SQL?",
+        "body": "I was wondering what SQL is.",
+        "user_id": 1
+    },
+    {
+        "title": "What is React?",
+        "body": "I was wondering what React is.",
+        "user_id": 4
+    },
+    {
+        "title": "What is node?",
+        "body": "I was wondering what node is.",
+        "user_id": 3
     }
 ]
