@@ -9,9 +9,9 @@ router.get('/:id', async (req, res) => {
             include: [
                 { 
                     model: User,
-                },
-            ],
-        }),
+                }
+            ]
+        });
 
         const blogs = blogData.map((blog) => blog.get({ plain: true }));
 

@@ -10,7 +10,7 @@ const signUpRoutes = require('./signUp');
 router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 router.use('/blogs', blogRoutes);
-router.use('/dashboard', dashboardRoutes);
+// router.use('/dashboard', dashboardRoutes);
 router.use('/login', loginRoutes);
 router.use('/signup', signUpRoutes);
 
