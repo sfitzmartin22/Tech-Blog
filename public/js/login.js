@@ -6,18 +6,18 @@ const loginHandler = async (event) => {
 
     if (email && password) {
     
-        const response = await fetch('/api/users/login', {
+        const response = await fetch('/api/users', {
             method: 'POST',
             body: JSON.stringify({email, password}),
             headers: { 'Content-Type': 'application/json' },
         });
 
         if(response.ok) {
-            document.location.replace('/');
+            document.location.replace('/dashboard');
         } else {
             alert('Failed to login');
         }
     }
 };
 
-document.querySelector('#login').addEventListener('submit', loginHandler);
+document.querySelector('#login').addEventListener('click', loginHandler);

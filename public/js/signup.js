@@ -9,14 +9,14 @@ const signupHandler = async(event) => {
 
 
     if(email && password) {
-        const response = await fetch('/api/users/create', {
+        const response = await fetch('/api/users', {
             method: 'POST',
             body: JSON.stringify({ email, username, password}),
             headers: { 'Content-Type': 'application/json' }
         });
 
         if(response.ok) {
-            document.location.replace('/');
+            document.location.replace('/dashboard');
         } else {
             alert('ERROR there already exists an account with that email');
         }
@@ -24,4 +24,4 @@ const signupHandler = async(event) => {
 };
 
 
-document.querySelector('#signup').addEventListener('submit', signupHandler);
+document.querySelector('#signup').addEventListener('click', signupHandler);
