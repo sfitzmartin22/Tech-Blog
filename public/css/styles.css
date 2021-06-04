@@ -1,0 +1,31 @@
+:root {
+    --primary: rgb(202, 176, 136);
+    --secondary: rgb(214, 133, 57);
+    --tertiary: rgb(19, 31, 70);
+    --dark: rgba(28, 29, 33, 1);
+    --light: rgb(13, 98, 109);
+}
+ * {
+     box-sizing: border-box;
+   }
+body {
+   
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--light);
+    line-height: 1.5;
+}
+
+header {
+
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--secondary);
+    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+}
