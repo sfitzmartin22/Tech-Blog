@@ -27,4 +27,8 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
+router.get("/blog/", withAuth, async (req, res) => {
+    res.render('createblog', {logged_in: req.session.logged_in, user: req.session.user});
+});
+
 module.exports = router;

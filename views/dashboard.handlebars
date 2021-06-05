@@ -1,3 +1,12 @@
+<div class="container-dashboard-header">
+    <div class="card">        
+        <div class="card-header">
+            <h1>Welcome to your personal dashboard {{blogs.username}}!</h1>
+            <a href="/dashboard/blog/" button class="btn btn-primary" id="createblog">Click this button to create a new blog</a>
+        </div>
+    </div>
+</div>        
+
 {{#each blogs as |blog|}}
 <div class="container">
     <div class="card">        
@@ -5,6 +14,7 @@
             <h1>{{blog.title}}</h1>
         </div>
         <h2 class="card-subheader">{{blog.date}}</h2>
+        <p class="card-body">{{blog.body}}</p>
         <a href="/blogs/{{blog.id}}" class="btn btn-primary">View Full Blog</a>
         <button class="btn btn-primary" id="delete" data-id="{{blog.id}}">Delete Post</a>
     </div>

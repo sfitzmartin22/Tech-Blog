@@ -43,3 +43,13 @@ header {
 .card {
     background-color: var(--tertiary);
 }
+
+.card-subheader {
+    font-size: 12;
+}
+
+#createblog {
+    background-color: var(--secondary);
+   
+}
+
