@@ -51,6 +51,19 @@ router.put("/id:", withAuth, async (req, res) => {
     } catch (err) {
         res.status(500).json({message: err.message});
     }
-})
+});
+
+router.delete('/delete', withAuth, async (req, res) => {
+    try {
+        const blogData = await Blog.destroy({where: {id: req.body.id, user_id: req.session.user_id}});
+        if (!blogData) {
+            res.status(400).json({message: "There was no blog found with this id."});
+            return;
+        }
+        res.status(200).json(blogData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 
 module.exports = router;

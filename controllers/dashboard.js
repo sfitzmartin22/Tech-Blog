@@ -16,10 +16,10 @@ router.get('/', withAuth, async (req, res) => {
             }
         });
 
-        const blog = blogData.map((blog) => blog.get({ plain: true }));
+        const blogs = blogData.map((blog) => blog.get({ plain: true }));
 
         res.render('dashboard', {
-            blog,
+            blogs,
             logged_in: req.session.logged_in
         });
     } catch (err) {
