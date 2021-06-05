@@ -1,19 +1,28 @@
-<div class="blog-single">
-    <div class="blog-single-header">
-        <h1>{{blogs.title}}</h1>
+<div class="title-container">
+<div class="card">
+    <div class="card-header">
+        <h1>Title</h1>
+        <h2>{{blogs.title}}</h2>
             <p>Posted by: {{blogs.user.username}} at {{blogs.date}}</p>
+    <div class="card-subheader">
+        <h1>{{blogs.body}}</h1>
     </div>
-    <div class="blog-single-body">
-        <h1>{{blog.body}}</h1>
     </div>
 </div>
+</div>
+
 
 {{#each comments as |comment|}}
-    <div class="body-single">
-        <p class="text">{{comment.body}}</p>
-        <p class="text">Posted by: {{user.username}} at {{comment.creation_date}}</p>
-{{/each}}
+<div class="comment-container">
+<div class="card">
+    <div class="card-header">
+        <h1>Response</h1>
+        <h1>{{comment.body}}</h1>
+        <p class="card-subheader">Posted by: {{user.username}} at {{comment.creation_date}}</p>
     </div>
+</div>
+</div>
+{{/each}}
 
 {{!-- {{#if logged_in}}
 <form class="new-comment">
@@ -21,3 +30,21 @@
 </form>
 
 {{/if logged_in}} --}}
+
+{{!-- 
+<div class="card">
+    <div class="card-header">
+        <h1>{{blogs.title}}</h1>
+            <p>Posted by: {{blogs.user.username}} at {{blogs.date}}</p>
+    </div>
+    <div class="card-subheader">
+        <h1>{{blog.body}}</h1>
+    </div>
+</div>
+
+{{#each comments as |comment|}}
+    <div class="card">
+        <p class="card-header">{{comment.body}}</p>
+        <p class="card-body">Posted by: {{user.username}} at {{comment.creation_date}}</p>
+{{/each}}
+    </div> --}}

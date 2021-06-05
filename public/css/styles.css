@@ -4,6 +4,8 @@
     --tertiary: rgb(19, 31, 70);
     --dark: rgba(28, 29, 33, 1);
     --light: rgb(13, 98, 109);
+    --lg: rgba(96, 96, 96);
+    --dark2: rgb(0,0,0)
 }
  * {
      box-sizing: border-box;
@@ -28,4 +30,16 @@ header {
     align-items: center;
     background-color: var(--secondary);
     box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+}
+
+.comment-container {
+    color: var(--lg);
+}
+
+.title-container {
+    color: var(--primary);
+}
+
+.card {
+    background-color: var(--tertiary);
 }

@@ -1,10 +1,10 @@
 <div class="container">
-    <div class="blog-cont">
+    <div class="card">
         {{#each blogs as |blog|}}
-        <div class="my-blog-card">
+        <div class="card-header">
             <h1>{{blog.title}}</h1>
             <p>Posted by: {{user.username}} at {{blog.date}}</p>
-            <div class="body">
+            <div class="card-body">
                 <p class="text">{{blog.text}}</p>
                 <a href="/blogs/{{blog.id}}"></a>
             </div>
@@ -13,4 +13,3 @@
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
