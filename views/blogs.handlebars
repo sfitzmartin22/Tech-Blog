@@ -1,7 +1,7 @@
 <div class="blog-single">
     <div class="blog-single-header">
-        <h1>{{blog.title}}</h1>
-            <p>Posted by: {{user.username}} at {{blog.date}}</p>
+        <h1>{{blogs.title}}</h1>
+            <p>Posted by: {{blogs.user.username}} at {{blogs.date}}</p>
     </div>
     <div class="blog-single-body">
         <h1>{{blog.body}}</h1>
@@ -15,9 +15,9 @@
 {{/each}}
     </div>
 
-{{#if logged_in}}
+{{!-- {{#if logged_in}}
 <form class="new-comment">
 
 </form>
 
-{{/if logged_in}}
+{{/if logged_in}} --}}
