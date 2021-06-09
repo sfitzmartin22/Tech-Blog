@@ -1,5 +1,3 @@
-var avatar_url = "";
-
 const signupHandler = async(event) => {
     event.preventDefault();
 
