@@ -3,12 +3,11 @@ const createBlogHandler = async(event) => {
 
     const title = document.querySelector('#blog-title').value.trim();
     const body = document.querySelector('#blog-body').value.trim();
-    const user_id = document.querySelector('#submit').getAttribute("data-id");
- 
+    
 
     const response = await fetch('/api/blogs', {
         method: 'POST',
-        body: JSON.stringify({title, body, user_id}),
+        body: JSON.stringify({title, body}),
         headers: { 'Content-Type': 'application/json' }
     });
 
