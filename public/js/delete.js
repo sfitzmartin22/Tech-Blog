@@ -3,9 +3,7 @@ const deleteBlog = async(event) => {
 
     const id = event.target.getAttribute("data-id");
     const response = await fetch(`/api/blogs/${id}`, {
-        method: "DELETE",
-        body: JSON.stringify({ id }),
-        headers: { "Content-Type": "application/json" }
+        method: "DELETE"
     });
 
     if(response.ok) {

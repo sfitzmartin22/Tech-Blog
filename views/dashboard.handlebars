@@ -16,10 +16,12 @@
         <h2 class="card-subheader">{{blog.date}}</h2>
         <p class="card-body">{{blog.body}}</p>
         <a href="/blogs/{{blog.id}}" class="btn btn-primary">View Full Blog</a>
-        <button class="btn btn-primary" id="delete" data-id="{{blog.id}}">Delete Post</a>
+        <button class="btn btn-primary" id="edit" data-id="{{blog.id}}">Edit Blog</a>
+        <button class="btn btn-primary" id="delete" data-id="{{blog.id}}">Delete Blog</a>
     </div>
 </div>
 {{/each}}
 
 
 <script src="./js/delete.js"></script>
+<script src="./js/editBlog.js"></script>

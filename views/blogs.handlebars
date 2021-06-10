@@ -24,6 +24,16 @@
 </div>
 {{/each}}
 
+<form class="comment-form">
+  <div class="form-group">
+    <label for="comment-body">Leave a comment below:</label>
+    <input type="comment-body-input" id="comment-body" class="form-control">
+   </div>
+  <button type="submit" id="submit" data-blog_id={{blog_id}} data-user_id={{user_id}} class="btn btn-primary">Submit</button>
+</form>
+
+<script src="/js/createComment.js"></script>
+
 {{!-- {{#if logged_in}}
 <form class="new-comment">
 
