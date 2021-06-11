@@ -1,15 +1,15 @@
 const editBlog = async(event) => {
     event.preventDefault();
 
-    const id = event.target.getAttribute("data-id");
-    const body = document.querySelector(".card-body");
-    const title = document.querySelector(".title");
+    const body = document.querySelector("blog-body");
+    const title = document.querySelector("#blog-title");
+
 
 
     if(title && body) {
     const response = await fetch('/api/blogs/edit', {
         method: "PUT",
-        body: JSON.stringify({body, title, id}),
+        body: JSON.stringify({body, title}),
         headers: { 'Content-Type': 'application/json' }
     });
 

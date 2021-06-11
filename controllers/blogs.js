@@ -46,6 +46,11 @@ router.get('/edit/:id', withAuth, async (req, res) => {
             ]
         });
 
+        if(!blogData) {
+            res.status(404).json({message: "there is not blog with that id"});
+            return;
+        }
+
         const blogs = blogData.get({ plain: true });
 
         res.render('editblog', {
