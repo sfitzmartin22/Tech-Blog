@@ -1,15 +1,18 @@
 const editBlog = async(event) => {
+    console.log("editBlog");
     event.preventDefault();
 
-    const body = document.querySelector("blog-body");
-    const title = document.querySelector("#blog-title");
+    const id = event.target.getAttribute("data-id");
+    const body = document.querySelector("input[name='post-body']").value;
+    const title = document.querySelector("input[name='post-title']").value;
 
+    console.log(body, title, id);
 
 
     if(title && body) {
-    const response = await fetch('/api/blogs/edit', {
+    const response = await fetch(`/api/blogs/edit/${id}`, {
         method: "PUT",
-        body: JSON.stringify({body, title}),
+        body: JSON.stringify({body, title, id}),
         headers: { 'Content-Type': 'application/json' }
     });
 
@@ -21,4 +24,5 @@ const editBlog = async(event) => {
 };
 }
 
-document.querySelector("#edit").addEventListener("click", editBlog);
+document.querySelector("#edit").addEventListener("click", editBlog); 
+console.log("loaded editBlog js file");

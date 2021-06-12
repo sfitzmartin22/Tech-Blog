@@ -5,13 +5,13 @@
             <div class="card-body">
                     <div class="form-group">
                         <label for="blog-title">Blog Title</label>
-                        <input type="blog-title-input" id="blog-title" value={{blog.title}}>
+                        <input type="blog-title-input" id="blog-title" name="post-title" value={{blog.title}}>
                     </div>
                     <div class="form-group">
                         <label for="Blog-body">Blog Body</label>
-                        <input type="blog-body-input" id="blog-body" value={{blog.body}}>
+                        <input type="blog-body-input" id="blog-body" name="post-body" value={{blog.body}}>
                     </div>
-                    <button type="submit" id="edit" class="btn btn-primary">Submit</button>
+                    <button type="submit" id="edit" data-id={{blog_id}} class="btn btn-primary">Submit</button>
             </div>
         </div>
     </div>
