@@ -5,6 +5,8 @@
 
   ## Description
   This project is a website that users can signup/login/logout in order to create/comment/ on technology blogs.
+
+  online deployment (https://shielded-coast-10793.herokuapp.com/)
  
   ## Table of Contents
   - [Description](#description)
